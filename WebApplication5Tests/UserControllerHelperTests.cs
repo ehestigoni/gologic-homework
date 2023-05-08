@@ -12,7 +12,6 @@ namespace WebApplication5Tests
     class UserControllerHelperTests
     {
 
-
         private IUserControllerHelper _userControllerHelper;
         private Dictionary<string, User> _users;
 

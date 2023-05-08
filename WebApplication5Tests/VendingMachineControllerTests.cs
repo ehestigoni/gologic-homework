@@ -7,7 +7,7 @@ using WebApplication5.Helpers;
 using WebApplication5.Models;
 using WebApplication5.SharedData;
 
-namespace Tests
+namespace WebApplication5Tests
 {
     public class VendingMachineControllerTests
     {
