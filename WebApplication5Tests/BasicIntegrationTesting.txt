@@ -1,0 +1,40 @@
+﻿
+
+*** These are NOT automated ***
+
+
+// Get available products (stubbed data, loaded on startup)
+http://localhost:61839/api/VendingMachine/getAvailableProducts
+// [{"Name":"Product1","Quantity":1,"Price":10.00},{"Name":"Product2","Quantity":2,"Price":11.00},{"Name":"Product3","Quantity":3,"Price":12.00},{"Name":"Product4","Quantity":4,"Price":13.50}]
+
+
+// Get availability of a product 
+http://localhost:61839/api/VendingMachine/getProductByName?strName=Product1
+
+
+// Add some credit to a given user
+http://localhost:61839/api/User/addRemoveUserCredit?user=Eduardo&money=100
+
+
+// Check their balance
+http://localhost:61839/api/User/GetUserBalance?user=Eduardo
+
+
+// Purchase some products
+http://localhost:61839/api/VendingMachine/purchaseProduct?user=Eduardo&productName=Product1&quantity=1
+http://localhost:61839/api/VendingMachine/purchaseProduct?user=Eduardo&productName=Product2&quantity=1
+http://localhost:61839/api/VendingMachine/purchaseProduct?user=Eduardo&productName=Product2&quantity=1
+http://localhost:61839/api/VendingMachine/purchaseProduct?user=Eduardo&productName=Product3&quantity=1
+
+
+//Check purchases of a given user
+// http://localhost:61839/api/User/GetUserPurchases?user=Eduardo
+
+
+// Get the remaining credit back
+http://localhost:61839/api/User/GetUserCreditBack?user=Eduardo
+
+
+
+
+
