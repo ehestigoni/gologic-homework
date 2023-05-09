@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Virtual Vending Machine</title>
+</head>
+<body>
+    <h4>This project provides basic functionality of a Virtual Vending Machine.</h4>
+    <p>You can interrogate the API to test basic functionality as follows:</p>
+    <br />
+
+    <h4>Get available products (stubbed data, loaded on startup)</h4>
+    <p><a href="http://localhost:61839/api/VendingMachine/getAvailableProducts">http://localhost:61839/api/VendingMachine/getAvailableProducts</a></p>
+    <br />
+
+    <h4>Get availability of a product</h4>
+    <p><a href="http://localhost:61839/api/VendingMachine/getProductByName?strName=Product1">http://localhost:61839/api/VendingMachine/getProductByName?strName=Product1</a></p>
+    <br />
+
+    <h4>Add some credit to a given user</h4>
+    <p><a href="http://localhost:61839/api/User/addRemoveUserCredit?user=User1&money=100">http://localhost:61839/api/User/addRemoveUserCredit?user=User1&money=100</a></p>
+    <br />
+
+    <h4>Check their balance</h4>
+    <p><a href="http://localhost:61839/api/User/GetUserBalance?user=User1">http://localhost:61839/api/User/GetUserBalance?user=User1</a></p>
+    <br />
+
+    <h4>Purchase some products</h4>
+    <p><a href="http://localhost:61839/api/VendingMachine/purchaseProduct?user=User1&productName=Product1&quantity=1">http://localhost:61839/api/VendingMachine/purchaseProduct?user=User1&productName=Product1&quantity=1</a></p>
+    <p><a href="http://localhost:61839/api/VendingMachine/purchaseProduct?user=User1&productName=Product2&quantity=1">http://localhost:61839/api/VendingMachine/purchaseProduct?user=User1&productName=Product2&quantity=1</a></p>
+    <br />
+
+    <h4>Check purchase of a given user</h4>
+    <p><a href="http://localhost:61839/api/User/GetUserPurchases?user=User1">http://localhost:61839/api/User/GetUserPurchases?user=User1</a></p>
+    <br />
+
+    <h4>Get the remaining credit back</h4>
+    <p><a href="http://localhost:61839/api/User/GetUserCreditBack?user=User1">http://localhost:61839/api/User/GetUserCreditBack?user=User1</a></p>
+
+
+
+
+</body>
+</html>
